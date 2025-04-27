@@ -1,0 +1,78 @@
+/* ClickCounter.css */
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .counter-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .counter-value {
+    font-size: 3.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #2563eb;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .decrease-button, .increase-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: white;
+  }
+  
+  .decrease-button {
+    background-color: #ef4444;
+  }
+  
+  .decrease-button:hover:not(.disabled) {
+    background-color: #dc2626;
+  }
+  
+  .decrease-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .increase-button {
+    background-color: #10b981;
+  }
+  
+  .increase-button:hover {
+    background-color: #059669;
+  }
+  
+  .limit-message {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
+    color: #b45309;
+    border-radius: 0.25rem;
+  }
+  
+  .zero-message {
+    margin-top: 1.5rem;
+    color: #6b7280;
+  }
